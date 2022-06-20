@@ -5,4 +5,3 @@ for i in range(n-1,k-1,-1):
     print(arr[i],end=' ')
 for i in range(0,k):
     print(arr[i],end=' ')
-    
