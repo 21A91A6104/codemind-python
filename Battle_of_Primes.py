@@ -8,7 +8,6 @@ a=int(input())
 b=int(input())
 for i in range(1,100):
     c=a+b+i
-    if(prime(c)):
+    if prime(c):
         print(i)
         break
-            
