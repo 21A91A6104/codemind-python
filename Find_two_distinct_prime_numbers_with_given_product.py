@@ -6,18 +6,19 @@ def prime(n):
             return False
     if count==0:
         return True
-n=int(input())
-x=0
-for i in range(1,n):
+a=int(input())
+t=0
+for i in range(1,a):
     if prime(i):
-        for j in range(1,n):
+        for j in range(1,a):
             if prime(j):
-                if i*j==n:
-                    x=1
-                    print(i,end=' ')
-                    print(j,end=' ')
+                if i*j==a:
+                    t=1
+                    print(i,end=" ")
+                    print(j,end=" ")
                     break
-    if x==1:
-        break
-if x==0:
+        if t==1:
+            break
+if t==0:
     print("-1")
+        
