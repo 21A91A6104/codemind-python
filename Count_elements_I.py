@@ -1,13 +1,10 @@
-a,b=map(int,input().split())
+x,y=map(int,input().split())
 l=list(map(int,input().split()))
-k=list(map(int,input().split()))
 l=set(l)
+k=list(map(int,input().split()))
 k=set(k)
-g=[]
+c=0
 for i in l:
     if i in k:
-        g.append(i)
-'''for i in k:
-    if i not in l:
-        g.append(i)'''
-print(len(g))
+        c+=1
+print(c)
